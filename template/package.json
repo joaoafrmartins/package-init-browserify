@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "install": "spaghetty install -li",
+    "build": "browserify <%= context['browserify.entry']%>  -d -o <%= context['browserify.fileout']%> --extension=\".coffee\"",
+    "git-gui": "git gui"
+  },
+  "browserify": {
+    "transform": [
+      "ejsify",
+      "coffeeify",
+      "browserify-shim",
+      "lessify"
+    ]
+  },
+  "devDependencies": {
+    "browserify-shim": "",
+    "coffeeify": "",
+    "lessify": "",
+    "ejsify": ""
+  },
+  "dependencies": {
+    "jquery": "",
+    "es5-shim": "",
+    "json3": "",
+    "font-awesome": "",
+    "bootstrap": ""
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "theme": "./lib/theme/src/index.less"
+  },
+  "browserify-shim": {
+    "jquery": {
+      "exports": "$"
+    }
+  }
+}

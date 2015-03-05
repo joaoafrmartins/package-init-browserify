@@ -1,0 +1,21 @@
+{
+  "name": "package-init-browserify",
+  "version": "0.0.0",
+  "main": "lib/main",
+  "description": "Package Init Browserify",
+  "keywords": [
+    "package",
+    "init",
+    "browserify"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/joaoafrmartins/package-init-browserify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaoafrmartins/package-init-browserify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joaoafrmartins/package-init-browserify/issues"
+  }
+}
